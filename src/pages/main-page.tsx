@@ -52,7 +52,7 @@ export default function LandingPage() {
         </div>
         <div>
           <TransactionsTable
-            transactions={transactions.filter((transaction) => transaction.beneficiary.includes(filter))}
+            transactions={transactions.filter((transaction) => transaction.beneficiary.toLowerCase().includes(filter.toLowerCase()))}
             onDelete={deleteTransaction}
           />
         </div>
