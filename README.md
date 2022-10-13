@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to run the app
 
-You can preview the application on [Github Pages]() or run in local.
+You can preview the application deployed on [Vercel](https://transaction-app-beta.vercel.app/) or run in local.
 
 In the project directory, you can run:
 
