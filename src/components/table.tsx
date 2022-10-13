@@ -39,7 +39,7 @@ export default function Table({ data, onDelete }: TableProps & DeleteFunc) {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200">
-                                {slice.length > 1 ?
+                                {slice.length >= 1 ?
                                     slice.map((row: Transaction) => <TableRow key={row.id} {...row} onDelete={onDelete} />) :
                                     <tr><td colSpan={tableHeaders.length}><p className="p-8 text-pink-700">No transaction data</p></td></tr>}
                             </tbody>
